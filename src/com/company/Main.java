@@ -103,7 +103,7 @@ public class Main {
             movie = getMovie(moviesArray);
             String board = startGame(movie);
             for (int i=10; i>0; i--) {
-                System.out.println("You have " + i + " times to guess. Please guess a letter: " + movie);
+                System.out.println("You have " + i + " times to guess. Please guess a letter: ");
                 board = updateBoard(board, movie);
                 System.out.println(board);
                 if (boardCheck(board)){
